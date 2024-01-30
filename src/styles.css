@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(155, 197, 197);
+}
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+li {
+  margin: 5px;
+  display: inline-table;
+}
+.app-body {
+  max-width: 600px;
+  margin: 30px auto;
+  background: rgb(222, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+}
