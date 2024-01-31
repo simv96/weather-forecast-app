@@ -28,21 +28,25 @@ let currentDateELement = document.querySelector("#date-time");
 let currentDate = new Date();
 currentDateELement.innerHTML = formatDate(currentDate);
 
+function showCurrentWeather(response) {
+  let temp = Math.round(response.data.temperature.current);
+  let tempHeader = document.querySelector("#current-temp-value");
+  let city = response.data.city;
+  let cityHeading = document.querySelector("#city-header");
+  let condition = response.data.condition.description;
+  let conditionHeader = document.querySelector("#condition");
+  tempHeader.innerHTML = `${temp}`;
+  cityHeading.innerHTML = `${city}`;
+  conditionHeader.innerHTML = `${condition}`;
+}
+
 function searchCity(event) {
   event.preventDefault();
-  let city = document.querySelector("#search-city");
-  let cityHeading = document.querySelector("#city-header");
-  cityHeading.innerHTML = `${city.value}`;
-
-  function showCurrentWeather(response) {
-    let temp = Math.round(response.data.temperature.current);
-    let tempHeader = document.querySelector("#current-temp-value");
-    tempHeader.innerHTML = `${temp}`;
-  }
-  let cityValue = city.value;
+  let cityInput = document.querySelector("#search-city");
+  let cityValue = cityInput.value;
   let apiKey = "ee21f04bf3f2ad6e420ef9to7c4ad1a4";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${cityValue}&key=${apiKey}`;
   axios.get(apiUrl).then(showCurrentWeather);
 }
-let cityInput = document.querySelector("#search-bar");
-cityInput.addEventListener("submit", searchCity);
+let searchForm = document.querySelector("#search-bar");
+searchForm.addEventListener("submit", searchCity);
