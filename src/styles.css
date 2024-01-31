@@ -93,22 +93,34 @@ a {
 }
 .current-weather-data {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .current-temp {
-  font-size: 50px;
-  margin: 10px;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0px;
   color: #132743;
+}
+.temp-icon {
+  font-size: 60px;
+  margin: 15px;
+  margin-right: 0px;
+}
+.temp-measure {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 15px;
+  margin-left: 0px;
 }
 .weather-description {
   font-weight: bold;
-  color: rgb(173, 26, 153);
+  color: rgb(215, 51, 100);
 }
 .humididty-value {
   font-weight: bold;
-  color: rgb(173, 26, 153);
+  color: rgb(215, 51, 100);
 }
 .wind-value {
   font-weight: bold;
-  color: rgb(173, 26, 153);
+  color: rgb(215, 51, 100);
 }
