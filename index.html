@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather Forecast App</title>
   </head>
   <body>
@@ -11,19 +12,20 @@
       <header>Forecast Now</header>
       <br />
       <div>
-        <form action="" class="search-bar">
+        <form action="" class="search-bar" id="search-bar">
           <input
             type="Search"
             placeholder="Enter a city..."
             required
             class="search-input"
+            id="search-city"
           />
           <input type="submit" value="Search" class="search-button" />
         </form>
       </div>
       <div class="current-weather-data">
         <div>
-          <h1>Paris</h1>
+          <h1 id="city-header">Paris</h1>
           <p>
             <span id="date-time">Tuesday 16:30</span>,
             <span class="weather-description"> sunny </span> <br />
@@ -33,7 +35,7 @@
         </div>
         <div>
           <span class="temp-icon">🔆</span>
-          <span class="current-temp">24</span>
+          <span class="current-temp" id="current-temp-value">24</span>
           <span class="temp-measure">°C</span>
         </div>
       </div>
