@@ -1,7 +1,7 @@
 body {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/071/original/26_april_8.jpg?1706699307);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-size: 100%;
+  background-size: 120%;
 }
 header {
   font-size: 40px;
@@ -19,30 +19,32 @@ header {
 }
 h1 {
   font-size: 40px;
-  margin-bottom: 0px;
-  margin-inline-start: 18px;
   color: #132743;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 p {
-  margin: 0px;
-  margin-inline-start: 18px;
+  margin: 5px;
 }
+
 ul {
   list-style-type: none;
-  padding: 5px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 li {
-  margin: 16px;
+  margin: 10px;
   display: inline-grid;
   text-align: center;
   border: solid 2px white;
-  padding: 20px;
-  border-radius: 5px;
+  padding: 20px 25px;
+  border-radius: 20px;
   font-size: 17px;
   background-color: #407088;
   color: white;
-  justify-content: space-between;
-  align-content: center;
+  line-height: 30px;
 }
 footer {
   border-top: 1px solid #f9f7fe;
@@ -77,22 +79,36 @@ a {
   border: none;
   color: darkslategray;
   background-color: white;
+  line-height: 20px;
 }
 .search-button {
   margin-left: 5px;
   font-size: 18px;
   padding: 13px;
-  line-height: 1;
+  line-height: 20px;
   border-radius: 5px;
   border: none;
   background: #132743;
   color: white;
 }
+.current-weather-data {
+  display: flex;
+  justify-content: space-between;
+}
 .current-temp {
-  position: relative;
-  top: -285px;
-  left: 250px;
   font-size: 50px;
-  margin: 0px;
+  margin: 10px;
   color: #132743;
+}
+.weather-description {
+  font-weight: bold;
+  color: rgb(173, 26, 153);
+}
+.humididty-value {
+  font-weight: bold;
+  color: rgb(173, 26, 153);
+}
+.wind-value {
+  font-weight: bold;
+  color: rgb(173, 26, 153);
 }
