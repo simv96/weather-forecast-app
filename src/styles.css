@@ -1,6 +1,21 @@
 body {
   background-color: rgb(155, 197, 197);
 }
+header {
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: monospace;
+  color: darkslategrey;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  padding: 10px 0px;
+  max-width: 300px;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
 ul {
   list-style-type: none;
   padding: 0px;
