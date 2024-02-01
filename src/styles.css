@@ -28,25 +28,6 @@ p {
   margin-bottom: 30px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-}
-li {
-  margin: 10px;
-  display: inline-grid;
-  text-align: center;
-  border: solid 2px white;
-  padding: 20px 20px;
-  border-radius: 20px;
-  font-size: 17px;
-  background-color: #407088;
-  color: white;
-  line-height: 35px;
-}
 footer {
   border-top: 1px solid #f9f7fe;
   text-align: justify;
@@ -123,12 +104,23 @@ a {
   font-weight: bold;
   color: rgb(215, 51, 100);
 }
-.forecast-icon {
-  font-size: 30px;
+.weather-forecast {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.high-forecast {
+.forecast-day {
+  font-size: 20px;
+}
+.forecast-temps {
+  font-size: 17px;
   font-weight: bold;
 }
-.low-forecast {
-  color: #c5eaf3;
+.forecast-high {
+  color: rgb(64, 112, 136);
+}
+.forecast-low {
+  color: rgba(64, 112, 136, 0.6);
 }
