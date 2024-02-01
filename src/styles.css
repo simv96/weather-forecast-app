@@ -113,11 +113,11 @@ a {
 }
 .forecast-date {
   background-color: rgba(246, 234, 238, 0.7);
-  padding: 20px;
+  padding: 23px 20px;
   border-radius: 15px;
 }
 .forecast-day {
-  font-size: 20px;
+  font-size: 18px;
 }
 .forecast-temps {
   font-size: 17px;
