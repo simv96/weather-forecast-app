@@ -40,12 +40,12 @@ li {
   display: inline-grid;
   text-align: center;
   border: solid 2px white;
-  padding: 20px 25px;
+  padding: 20px 20px;
   border-radius: 20px;
   font-size: 17px;
   background-color: #407088;
   color: white;
-  line-height: 30px;
+  line-height: 35px;
 }
 footer {
   border-top: 1px solid #f9f7fe;
@@ -122,4 +122,13 @@ a {
 .wind-value {
   font-weight: bold;
   color: rgb(215, 51, 100);
+}
+.forecast-icon {
+  font-size: 30px;
+}
+.high-forecast {
+  font-weight: bold;
+}
+.low-forecast {
+  color: #c5eaf3;
 }
