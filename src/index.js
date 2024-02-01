@@ -30,16 +30,16 @@ currentDateELement.innerHTML = formatDate(currentDate);
 
 function showCurrentWeather(response) {
   let temp = Math.round(response.data.temperature.current);
-  let tempHeader = document.querySelector("#current-temp-value");
   let city = response.data.city;
-  let cityHeading = document.querySelector("#city-header");
   let condition = response.data.condition.description;
-  let conditionHeader = document.querySelector("#condition");
   let humidity = response.data.temperature.humidity;
-  let humidityHeader = document.querySelector("#humidity");
   let wind = response.data.wind.speed;
-  let windHeader = document.querySelector("#wind");
   let icon = document.querySelector("#icon");
+  let tempHeader = document.querySelector("#current-temp-value");
+  let cityHeading = document.querySelector("#city-header");
+  let conditionHeader = document.querySelector("#condition");
+  let humidityHeader = document.querySelector("#humidity");
+  let windHeader = document.querySelector("#wind");
 
   tempHeader.innerHTML = `${temp}`;
   cityHeading.innerHTML = `${city}`;
