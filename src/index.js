@@ -63,3 +63,30 @@ function searchCity(event) {
 }
 let searchForm = document.querySelector("#search-bar");
 searchForm.addEventListener("submit", searchCity);
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  let forecastHTML = "";
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="forecast-date">
+          <div class="forecast-day">${day}</div>
+          <img
+            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-night.png"
+            alt=""
+            width="50"
+          />
+          <div class="forecast-temps">
+            <span class="forecast-high">20°c </span
+            ><span class="forecast-low"> 16°c</span>
+          </div>
+        </div>`;
+  });
+  forecastElement.innerHTML = forecastHTML;
+}
+
+displayForecast();
