@@ -102,9 +102,7 @@ a {
   color: #132743;
 }
 .temp-icon {
-  font-size: 60px;
-  margin: 15px;
-  margin-right: 0px;
+  width: 80px;
 }
 .temp-measure {
   font-size: 30px;
