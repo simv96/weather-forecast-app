@@ -112,7 +112,7 @@ a {
   margin-bottom: 20px;
 }
 .forecast-date {
-  background-color: #f6eaee;
+  background-color: rgba(246, 234, 238, 0.7);
   padding: 20px;
   border-radius: 15px;
 }
