@@ -33,7 +33,7 @@ function showCurrentWeather(response) {
   let city = response.data.city;
   let condition = response.data.condition.description;
   let humidity = response.data.temperature.humidity;
-  let wind = response.data.wind.speed;
+  let wind = Math.round(response.data.wind.speed);
   let icon = document.querySelector("#icon");
   let tempHeader = document.querySelector("#current-temp-value");
   let cityHeading = document.querySelector("#city-header");
@@ -45,7 +45,7 @@ function showCurrentWeather(response) {
   cityHeading.innerHTML = `${city}`;
   conditionHeader.innerHTML = `${condition}`;
   humidityHeader.innerHTML = `${humidity}%`;
-  windHeader.innerHTML = `${wind}km/h`;
+  windHeader.innerHTML = `${wind} km/h`;
   icon.innerHTML = `<img
               src="${response.data.condition.icon_url}"
               alt=""
